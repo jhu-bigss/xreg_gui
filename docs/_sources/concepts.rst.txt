@@ -37,6 +37,6 @@ Image Registration
   Uses multiple views to improve alignment accuracy. In our current setup with the GUI we are using 3 views for multi-view registration.
 
 Literature Review
----------
+------------------
 
 TO BE ADDED
