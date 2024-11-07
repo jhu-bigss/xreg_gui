@@ -36,7 +36,7 @@ Components
 
 
 Example Scenes
---------
+---------------
 
 These are two example interactive scenes that are visualized after running a singleview lumbar phantom registration process.
 
@@ -54,7 +54,7 @@ These are two example interactive scenes that are visualized after running a sin
 
 
 Visualization Controls
--------
+------------------------
 
 TO BE ADDED
 
