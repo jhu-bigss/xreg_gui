@@ -18,7 +18,7 @@ release = '0.1'
 
 # Add any Sphinx extension module names here, as strings.
 extensions = [
-    'sphinx_copybutton'
+    'sphinx_copybutton',
     'sphinx_rtd_theme',
 
 ]

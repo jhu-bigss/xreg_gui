@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Key Concepts &mdash; BIGSS xreg GUI Documentation 0.1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+
+  
+    <link rel="canonical" href="https://jhu-bigss.github.io/xreg_gui/concepts.html" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=2709fde1"></script>
+        <script src="_static/doctools.js?v=9a2dae69"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+        <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Troubleshooting &amp; Known Issues" href="troubleshooting.html" />
+    <link rel="prev" title="Visualize Window" href="user_guide/visualize_window.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            BIGSS xreg GUI Documentation
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="user_guide/index.html">User Guide</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Key Concepts</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#digital-reconstructed-radiograph-drr">Digital Reconstructed Radiograph (DRR)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#image-registration">Image Registration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#literature-review">Literature Review</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting.html">Troubleshooting &amp; Known Issues</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">BIGSS xreg GUI Documentation</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Key Concepts</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/concepts.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="key-concepts">
+<h1>Key Concepts<a class="headerlink" href="#key-concepts" title="Link to this heading"></a></h1>
+<p>This section introduces essential concepts related to medical image processing, DRR generation, and image registration to help new users understand the underlying processes.</p>
+<section id="digital-reconstructed-radiograph-drr">
+<h2>Digital Reconstructed Radiograph (DRR)<a class="headerlink" href="#digital-reconstructed-radiograph-drr" title="Link to this heading"></a></h2>
+<p>A <strong>Digital Reconstructed Radiograph (DRR)</strong> is a simulated X-ray image generated from 3D volumetric data, such as CT scans. DRRs are used for:</p>
+<ul class="simple">
+<li><p>Preoperative planning.</p></li>
+<li><p>Image-guided surgery.</p></li>
+<li><p>Comparing with actual X-ray images for registration.</p></li>
+</ul>
+<p><strong>How DRRs are Generated</strong></p>
+<ul class="simple">
+<li><p>A virtual X-ray source and detector are positioned relative to the 3D volume.</p></li>
+<li><p>Rays are cast through the volume, simulating attenuation based on the material properties.</p></li>
+<li><p>The resulting 2D projection is the DRR.</p></li>
+</ul>
+</section>
+<section id="image-registration">
+<h2>Image Registration<a class="headerlink" href="#image-registration" title="Link to this heading"></a></h2>
+<p><strong>Image Registration</strong> is the process of aligning two or more images of the same scene taken at different times, from different viewpoints, or by different sensors.</p>
+<p><strong>2D/3D Registration</strong> involves aligning a 2D image (e.g., X-ray) with a 3D volume (e.g., CT scan), which is essential for image-guided interventions where preoperative 3D data is registered with intraoperative 2D images in order to achive tasks like (1) tracking the position of surgical tools in human body and assist with tool navigation, (2) accessing the surgery results, (3) visualizing the 3D volume in the same coordinate system as the 2D images (e.g. overlaying tools/lesions in 2D images), (4) AR applications.</p>
+<p><strong>Types of Registration in the GUI</strong></p>
+<ul>
+<li><p><strong>Single-target Singleview Registration</strong></p>
+<p>Aligns a single target structure using one projection view.</p>
+</li>
+<li><p><strong>Single-target Multiview Registration</strong></p>
+<p>Uses multiple views to improve alignment accuracy. In our current setup with the GUI we are using 3 views for multi-view registration.</p>
+</li>
+</ul>
+</section>
+<section id="literature-review">
+<h2>Literature Review<a class="headerlink" href="#literature-review" title="Link to this heading"></a></h2>
+<p>TO BE ADDED</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="user_guide/visualize_window.html" class="btn btn-neutral float-left" title="Visualize Window" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="troubleshooting.html" class="btn btn-neutral float-right" title="Troubleshooting &amp; Known Issues" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, BIGSS Lab.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
