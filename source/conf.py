@@ -19,6 +19,8 @@ release = '0.1'
 # Add any Sphinx extension module names here, as strings.
 extensions = [
     'sphinx_copybutton'
+    'sphinx_rtd_theme',
+
 ]
 
 
@@ -40,6 +42,8 @@ html_static_path = ['_static']
 html_use_index = True
 html_show_sourcelink = True
 html_show_sphinx = True
+html_baseurl = 'https://jhu-bigss.github.io/xreg_gui/'
+
 
 html_secnumber_suffix = ' '
 numfig = True
