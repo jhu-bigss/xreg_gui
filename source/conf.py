@@ -9,7 +9,7 @@
 import sphinx_rtd_theme
 
 project = 'BIGSS xreg GUI Documentation'
-copyright = '2024, Ping-Cheng Ku'
+copyright = '2024, BIGSS Lab'
 author = 'Ping-Cheng Ku'
 release = '0.1'
 
